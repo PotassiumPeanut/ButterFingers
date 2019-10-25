@@ -8,16 +8,23 @@
 </head>
 <body>
     <h1>Butterfingers: The Tale of a Young Squire</h1>
-    <button onclick="myFunction()">Click Me</button>
-    <div id="myDIV"> </div>
+    <p>This tale is about a squire named Scott.  Now, Scott was qualified for being a knight, as he were witty, courageous, and persevering; but he had an affliction that still had him be a squire;  he had butterfingers.  For 7 years, it seemed that Scott simply couldn’t overcome this curse that blocked his path to knighthood.  Luckily, he had a patient teacher, one who was the most valiant of the land, Sir Ivan.  When most of the knights turned Scott down because of his butterfingers, Sir Ivan was there, welcoming Scott as his squire.  When the other knights heard this they were a bit confused, but they didn’t question Ivan’s decisions.</p>
+    <p>One day, as the two were training, the king called all of his knights and their squires over to the throne room for an important meeting.  “My loyal subjects,” he began, “my precious daughter has been seized by a fiendish dragon by the night.  I need five noble knights to journey to the beast’s den to slay it and recover my daughter from that abomination’s lair.”</p>
+    <p>One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires."</p>
+    
+    <h3>Join Sir Ivan?</h3>
+    <button onclick="Depart()">Yes</button> <button onclick="Stay()">No</button> <button onclick="Indecisive()">I don't feel like it</button>
+    <div id="myDIV">
+      <p>This is my DIV element.</p>
+    </div>
 </body>
 <script>
-function myFunction() {
+function Depart() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === " ") {
-    x.innerHTML = "Peek-a-boo!";
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    x.innerHTML = " ";
+    x.style.display = "none";
   }
 }
 </script>
