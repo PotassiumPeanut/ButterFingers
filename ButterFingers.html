@@ -13,19 +13,15 @@
     <p>One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires."</p>
     
     <h3>Join Sir Ivan?</h3>
-    <button onclick="Depart()">Yes</button> <button onclick="Stay()">No</button> <button onclick="Indecisive()">I don't feel like it</button>
+    <button onclick="alert(story.depart)">Yes</button> <button onclick="Stay()">No</button> <button onclick="Indecisive()">I don't feel like it</button>
     <div id="myDIV">
-      <p>This is my DIV element.</p>
     </div>
 </body>
 <script>
-function Depart() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+var story = {
+    depart: "H",
+    stay: "A",
+    indecisive: "O",
 }
 </script>
 </html>
