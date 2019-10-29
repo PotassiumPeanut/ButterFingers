@@ -7,21 +7,18 @@
     <title>Butterfingers</title>
 </head>
 <body>
-    <h1>Butterfingers: The Tale of a Young Squire</h1>
-    <p>This tale is about a squire named Scott.  Now, Scott was qualified for being a knight, as he were witty, courageous, and persevering; but he had an affliction that still had him be a squire;  he had butterfingers.  For 7 years, it seemed that Scott simply couldn’t overcome this curse that blocked his path to knighthood.  Luckily, he had a patient teacher, one who was the most valiant of the land, Sir Ivan.  When most of the knights turned Scott down because of his butterfingers, Sir Ivan was there, welcoming Scott as his squire.  When the other knights heard this they were a bit confused, but they didn’t question Ivan’s decisions.</p>
-    <p>One day, as the two were training, the king called all of his knights and their squires over to the throne room for an important meeting.  “My loyal subjects,” he began, “my precious daughter has been seized by a fiendish dragon by the night.  I need five noble knights to journey to the beast’s den to slay it and recover my daughter from that abomination’s lair.”</p>
-    <p>One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires."</p>
-    
+    <h1>Butterfingers: The Tale of a Young Squire</h1>   
     <h3>Join Sir Ivan?</h3>
-    <button onclick="document.write(story.depart)">Yes</button> <button onclick="document.write(story.stay)">No</button> <button onclick="document.write(story.indecisive)">I don't feel like it</button>
+    <button onclick="document.write(story.depart)">Yes</button> <button onclick="document.write(story.stayAtCastle0)">No</button> <button onclick="document.write(story.indecisive0)">I don't feel like it</button>
     <div id="myDIV">
     </div>
 </body>
 <script>
-var story = {
-    depart: `H`,
-    stayAtCastle0: `A`,
-    indecisive0: `O`,
+const story = {
+    intro: `This tale is about a squire named Scott.  Now, Scott was qualified for being a knight, as he were witty, courageous, and persevering; but he had an affliction that still had him be a squire;  he had butterfingers.  For 7 years, it seemed that Scott simply couldn’t overcome this curse that blocked his path to knighthood.  Luckily, he had a patient teacher, one who was the most valiant of the land, Sir Ivan.  When most of the knights turned Scott down because of his butterfingers, Sir Ivan was there, welcoming Scott as his squire.  When the other knights heard this they were a bit confused, but they didn’t question Ivan’s decisions. \nOne day, as the two were training, the king called all of his knights and their squires over to the throne room for an important meeting.  “My loyal subjects,” he began, “my precious daughter has been seized by a fiendish dragon by the night.  I need five noble knights to journey to the beast’s den to slay it and recover my daughter from that abomination’s lair.”\n>One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires."`,
+    depart: `I don't know how to array \n text`,
+    stayAtCastle0: ` `,
+    indecisive0: ` `,
     stayAtCastle1: ` `,
     indecisive1: ` `,
     fleeComrades: ` `,
@@ -51,5 +48,33 @@ var story = {
     sirRRSword: ` `,
     ballAndChain: ` `
 }
+</script>
+<script>
+//<div id="story">
+//</div>
+//let storyContainer = document.getElementById("story");
+//storyContainer.innerHTML = H
+//<div id="buttons">
+//</div>
+// let buttonContainer = document.getElementById("buttons");
+//for(let choice in choices){
+//    makeButton(choice)
+//}
+//function bazingaButton(){
+//    let button = document.createElement
+//    ("button");
+//
+//    button.innerHTML = btnText;
+//
+//    buttoncontainer.appendchild(button);
+//}
+//function showStory() {
+    //let storyItem.innerText = document.createElement("p");
+    //storyItem.innerText = text;
+    //storyContainer.appendChild(storyItem)
+//}
+//showStory(story.intro.text);
+</script>
+button.addEventListener ("click", function())
 </script>
 </html>
