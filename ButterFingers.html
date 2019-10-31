@@ -76,30 +76,30 @@
     depart: {
         text: `Scott leaves the castle and then meets the mean squires`,
         choices: [
-            [],
-            []
+            ["Run Away","fleeComrades"],
+            ["Stay", "stayComrades"]
         ]
     },
     stayAtCastle0: {
         text: `Scott firmly stays at castle`,
         choices: [
-            [],
-            []
+            ["No way", "noWay"],
+            ["I guess he has to", "yeah"]
         ]
     },
     indecisive0: {
         text: `Scott stays at castle but is indecisive`,
         choices: [
-            [],
-            []
+            ["Stay", "stayAtCastle1"],
+            ["He should've gone","indecisive1"]
         ]
 
     },
     stayAtCastle1: {
         text: `from indecisive0, Scott stays`,
         choices: [
-            [],
-            []
+            ["No way", "noWay"],
+            ["I guess he has to", "yeah"]
         ]
 
     },
@@ -290,26 +290,21 @@ let buttonContainer = document.getElementById("buttons");
 
 let history = ["intro"]
 
-for(let choice in story.intro.choices){
-    makeButton(choice)
-}
-
-function bazingaButton(btnText, choice){
-    let button = document.createElement("button");
-    button.innerHTML = btnText;
-    buttoncontainer.appendChild(button);
-    button.addEventListener ("click", function() {
-           history.push(choice);
-           showStory();
-        });
-}
-
-function bazingaStory(text) {
-    let storyItem = document.createElement("p");
-    storyItem.innerText = text;
-    storyContainer.appendChild(storyItem);
-}
-function showStory(){
+function makeButton(btnText, choice){
+            let button = document.createElement("button");
+            button.innerHTML = btnText;
+            buttonContainer.appendChild(button);
+            button.addEventListener ("click", function() {
+                history.push(choice);
+                showStory();
+            });
+        }
+        function buildStory(text) {
+            let storyItem = document.createElement("p");
+            storyItem.innerText = text;
+            storyContainer.appendChild(storyItem);
+        }
+        function showStory(){
             let currentPage = history[history.length - 1]; // set currentPage to last index of history array.
             storyContainer.innerHTML = ""; // reset html
             buttonContainer.innerHTML = ""; // reset buttons
@@ -323,6 +318,9 @@ function showStory(){
             }
         }
         showStory();
-</script>
+        
+        
+    </script>
+      
 </body>
 </html>
