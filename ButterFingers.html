@@ -66,7 +66,7 @@
 <script>
     const story = {
     intro: { 
-        text: `One day, as the two were training, the king called all of his knights and their squires over to the throne room for an important meeting.  “My loyal subjects,” he began, “my precious daughter has been seized by a fiendish dragon by the night.  I need five noble knights to journey to the beast’s den to slay it and recover my daughter from that abomination’s lair.”\n One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires." \n \n Does Scott join Sir Ivan or does he stay behind?`,
+        text: `One day, as the two were training, the king called all of his knights and their squires over to the throne room for an important meeting.  “My loyal subjects,” he began, “my precious daughter has been seized by a fiendish dragon by the night.  I need five noble knights to journey to the beast’s den to slay it and recover my daughter from that abomination’s lair.”\n One by one, four knights and their squires come up to the the king to lend their hand.  Sir Ivan was going to approach the king, but looked back at Scott.  "Would you like to come with me on this journey?  I know you have problems wielding your arms, but I assure that you can be of help.  You can stay behind if you are not ready, and you can practice by yourself or with the other knights and squires." \n \n Does Scott join Sir Ivan?`,
         choices: [
             ["Yes", "depart"],
             ["No", "stayAtCastle0"],
@@ -117,18 +117,18 @@
 
     },
     stayComrades: {
-        text: `You get there and see the dragon`,
+        text: `You get there and see the dragon, How will you approach him?`,
         choices: [
-            [],
-            []
+            ["Be ready to fight", "aggressive"],
+            ["Be prepared but careful and ready" ,"passive"]
         ]
 
     },
     passive: {
-        text: ` `,
+        text: `The dragon told you to return to the Kingdom and tell the King to bring him all the gold and then went back to his cave, Heed the dragon's advice and return empty handed?`,
         choices: [
-            [],
-            []
+            ["Yes ", "dragonRight"],
+            ["No", "dragonWrong"]
         ]
 
     },
@@ -138,71 +138,71 @@
 
     },
     dragonRight: {
-        text: ` `,
+        text: `You return to the Kingdom empty handed. You return to the castle after a week's journey. The king knows what happened as the others did not return with you. He forms another gathering and asks for volunteers from the crowd. Only one comes up, Sir RichardRicher, the obnoxious excuse for a knight. Will you go with Sir RichardRicher?`,
         choices: [
-            [],
-            []
+            ["No! I hate him with a burning passion!", "noWay"],
+            ["Sure... Got nothing else to do..", "yeah"]
         ]
 
     },
     dragonWrong: {
-        text: ` `,
+        text: `You approach the castle, and expect the worst. You get inside the ruins you see a pile of armors yielding your kingdom's emblem. Will you attack the dragon to avenge fallen knights?`, 
         choices: [
-            [],
-            []
+            ["Yes!", "avenge"],
+            ["No", "dontAvenge"]
         ]
 
     },
     avenge: {
-        text: ` `,
+        text: `You walk into the castle ready for what is to come, what is your plan?`,
         choices: [
-            [],
-            []
+            ["Look around for the princess to make sure she is safe", "findPrincess"],
+            ["Kill the beast while you have your chance", "deleteBeast0"]
         ]
 
     },
     dontAvenge: {
-        text: ` `,
+        text: `What will you do instead of avenging them? `,
         choices: [
-            [],
-            []
+            ["Stay where you are and wait for backup", "steakOut"],
+            ["Become your own knight", "cowardice"]
         ]
 
     },
     cowardice: {
-        text: ` `,
+        text: `You're tired of being a squire, you go to the forest to live alone with a solitude life`,
         choices: []
 
     },
     steakOut: {
-        text: ` `,
+        text: `After some weeks, you see Sir RichardRicher approach. He offers a plan to go in and attack it hitting it repetitively. Do you agree to go with this plan?`,
         choices: [
-            [],
-            []
+            ["That's an excellent plan", "excellentPlan"],
+            ["That plan sucks", "youAreGoingToDie"]
         ]
 
     },
     findPrincess: {
         text: ` `,
         choices: [
-            [],
-            []
+            ["Get her out of there!", "takeFirst"],
+            ["There's still a dragon to dispose of", "deleteBeast1"]
         ]
 
     },
     deleteBeast0: {
-        text: `ded`,
+        text: ``,
         choices: [
-            [],
-            []
+            ["Find the nearest rock and bash the dragon's skull in", "vibeCheck"],
+            ["Find the nearest sword.", "shortSword"]
         ]
 
     },
     deleteBeast1: {
-        text: `ded`,
+        text: ` `,
         choices: [
-            [],
-            []
+            ["Find the nearest rock and bash the dragon's skull in", "vibeCheck"],
+            ["Find the nearest sword.", "shortSword"]
         ]
 
     },
@@ -256,7 +256,7 @@
         text: ` `,
         choices: [
             ["That's an excellent plan", "excellentPlan"],
-            ["That plan sucks", "noWay"]
+            ["That plan sucks", "youAreGoingToDie"]
         ]
 
     },
