@@ -66,7 +66,7 @@
 
     },
     fleeComrades: {
-        text: `Scott looks for the perfect oppurtunity to abscond from the situation.  As a loud sound grabbed everybody's attention, `,
+        text: `Scott looks for the perfect oppurtunity to abscond from the situation. As a loud sound grabbed everybody's attention, `,
         choices: []
 
     },
@@ -88,7 +88,9 @@
     },
     aggressive: {
         text: `ded`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     dragonRight: {
@@ -111,7 +113,7 @@
         text: `He walks into the castle ready for what is to come, what is the plan?`,
         choices: [
             ["Look around for the princess to make sure she is safe", "findPrincess"],
-            ["He should kill the beast while he has his chance", "deleteBeast0"]
+            ["He should kill the sleeping beast while he has his chance", "deleteBeast0"]
         ]
 
     },
@@ -125,7 +127,9 @@
     },
     cowardice: {
         text: `Scott is tired of being a squire, he goes to the forest to live alone with a solitude life`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     steakOut: {
@@ -137,7 +141,7 @@
 
     },
     findPrincess: {
-        text: ` `,
+        text: `Scott looks around and finally finds the princess, what will he do next?`,
         choices: [
             ["Get her out of there!", "takeFirst"],
             ["There's still a dragon to dispose of", "deleteBeast1"]
@@ -145,7 +149,7 @@
 
     },
     deleteBeast0: {
-        text: ``,
+        text: `Scott decides to kill him, how should he kill him?`,
         choices: [
             ["Find the nearest rock and bash the dragon's skull in", "vibeCheck"],
             ["Find the nearest sword.", "shortSword"]
@@ -153,7 +157,7 @@
 
     },
     deleteBeast1: {
-        text: ` `,
+        text: `Scott decides to kill the dragon, how should he kill him?`,
         choices: [
             ["Find the nearest rock and bash the dragon's skull in", "vibeCheck"],
             ["Find the nearest sword.", "shortSword"]
@@ -162,16 +166,20 @@
     },
     takeFirst: {
         text: `ded`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     vibeCheck: {
         text: `ded`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     shortSword: {
-        text: ` `,
+        text: `Scott goes around the castle looking for a sword and eventually finds an old rusty one. It is a little shorter than what he is used to but it will have to do. Where is the best spot to stab the dragon?`,
         choices: [
             ["Into his forehead", "foreheadButNo"],
             ["Right in the spine", "spineButNo"]
@@ -179,7 +187,7 @@
 
     },
     foreheadButNo: {
-        text: ` `,
+        text: `He gets ready to stab the forehead but he messes up a little and stabs the dragons eye instead. The dragon wakes up blinded and breathes fire everywhere angrily. He burns the ropes holding the cage releasing it to the ground. Scott goes over and finds the princess. How should he take her to safety?`,
         choices: [
             ["By the hand", "byHand"],
             ["Bridal style baby", "bridalStyle"]
@@ -188,22 +196,30 @@
     },
     spineButNo: {
         text: `ded`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },  
     byHand: {
         text: `Y'all got out the castle`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     bridalStyle: {
         text: `Y'all both died`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     noWay: {
         text: `ded but not really`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     yeah: {
@@ -216,7 +232,9 @@
     },
     excellentPlan: {
         text: `The Dragon wakes up and see how weak you two are and swipes its spiky tail at you both killing you at the same time.`,
-        choices: []
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     youAreGoingToDie: {
@@ -228,12 +246,21 @@
 
     },
     sirRRSword: {
-        text: `ded`,
-        choices: []
+        text: `He grabs the sword and whirls it up in the air ready to strike. As he whirls it up the sword slips out of his hand! The dragon chuckles some and lands a flatal blow on Scott, killing him.`,
+        choices: [
+            ["The End!", "theEnd"]
+        ]
 
     },
     ballAndChain: {
-        text: ` `,
+        text: `He has a flail and he swings at the dragon but it slips out of his hand! Luckily it launches up and comes crashing down on the dragon breaking his spine bringing him to a painful death. Scott runs around in search for the princess when suddenly he finds her! But her body is cold and frail... she has been stuck in here for weeks with no food or water and it has killed her. Scott returns to the kingdom with bad news for the king.`,
+        choices: [
+            ["The End!", "theEnd"]
+        ]
+
+    },
+    theEnd: {
+        text: `THE END! If you want to try again to make a different story line refresh the page :)`,
         choices: []
 
     },
@@ -274,7 +301,9 @@ function makeButton(btnText, choice){
         showStory();
         
         
+        
     </script>
       
 </body>
 </html>
+
