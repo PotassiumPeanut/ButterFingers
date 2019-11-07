@@ -8,8 +8,7 @@
 </head>
 <body>
     <div id=>
-    <h1>Butterfingers: The Tale of a Young Squire</h1>
-    <h2>(not finished)</h2>   
+    <h1>Butterfingers: The Tale of a Young Squire</h1>   
         <p>This tale is about a squire whose name is Scott.  Now, Scott qualifies for being a knight.  He is witty, courageous, and persevering; however, he has an affliction that still had him be a squire;  he has butterfingers.  For seven years, it seemed that Scott simply couldn’t overcome this curse that blocked his path to knighthood.  Lucky for him, he had a patient teacher, one who was the most valiant of the land, Sir Ivan.  When most of the knights turned Scott down because of his butterfingers, Sir Ivan was there, welcoming Scott as his squire.  When the other knights heard this, they were a bit confused, but they didn’t question Ivan’s decision.</p>
     <div id="myDIV">
     </div>
@@ -120,11 +119,11 @@
     cowardice: {
         text: `Scott is tired of being a squire, he's tired of being bossed around, and he's tired of everything that he had to deal with. He decided to become a self proclaimed knight and roams the lands.`,
         choices: [
-            ["Coward!", "theEnd"]
+            ["Coward!", "theMajorEnd"]
         ]
     },
     steakOut: {
-        text: `Scott decides to go back to camp and wait for reinforcements, he know some will come eventually. After some weeks and the crafting of a crude flail, he sees Sir RichardRicher approach.The knight was known as Sir “Anything You Can Do I Can Do Better” RichardRicher, one of the most prideful and irritating beings of the lands.  Sir RichardRicher thinks he’s better than everybody and flaunts it.  He acts like he’s part of the royal family, wearing purple on every occasion while everyone else is wearing red. He wants to be the best knight in the land even superior to Sir Ivan.  The king also held some distaste of Sir RichardRicher, but he kept him because he does pretty well in combat. It’s just painful to look at since he tries to incorporate his horrid dancing into the fighting. “To be a knight you have to dance; if you don’t, you won’t stand a chance!” is his stupid catchphrase that rings in everybody’s ears whenever he’s around.  He likes rhyming sometimes. \n  He sees you and offers a plan, ""?`,
+        text: `Scott decides to go back to camp and wait for reinforcements, he know some will come eventually. After some weeks and the crafting of a crude flail, he sees Sir RichardRicher approach. The knight was known as Sir “Anything You Can Do I Can Do Better” RichardRicher, one of the most prideful and irritating beings of the lands.  Sir RichardRicher thinks he’s better than everybody and flaunts it.  He acts like he’s part of the royal family, wearing purple on every occasion while everyone else is wearing red. He wants to be the best knight in the land even superior to Sir Ivan.  The king also held some distaste of Sir RichardRicher, but he kept him because he does pretty well in combat. It’s just painful to look at since he tries to incorporate his horrid dancing into the fighting. “To be a knight you have to dance; if you don’t, you won’t stand a chance!” is his stupid catchphrase that rings in everybody’s ears whenever he’s around.  He likes rhyming sometimes. \n  He sees you and offers a plan, "This is the plan that I came up with, and it's foolproof; trust me, I know it will be. We run and shout towards the beast, then I slice and you bash until it becomes deceased." \n \n Does Scott go through with Sir RichardRicher's plan?`,
         choices: [
             ["Yes, that's an excellent plan", "excellentPlan"],
             ["No, that plan sucks", "youAreGoingToDie"]
@@ -184,16 +183,15 @@
         ]
     },  
     byHand: {
-        text: `Scott grabs the princess by the hand, “Come on,  let’s leave this place before we become dead with the dragon!”  Scott urged, and with his hand he led the princess to the castle’s exit.  As much as he would have loved to sweep a lady off of her feet, Scott knew the circumstances weren’t right, especially since the lava moat was up ahead.  As they approach a less scorched land, the structure on the lava island finally crumbles, along with the dragon.  After they crossed the bridge,  Scott led the princess to the horses, excited whinnies come from Cody.  With a smile, Scott embraced his equestrian buddy, while the princess looked around the camp for food.  Scott finally turns to the princess, “Come here your highness, we should get back to the castle as soon as possible.”\nShe strides over, “What about the other horses?”\n"The king will send some other knights to pick them up,”  Scott replied.  “They all have enough hay to last them another week.”\n“ Okay,” Scott helps the princess onto the horse.  “Knowing my father, he’s probably worried sick right now.  Let’s hurry.”  The two trot back to the castle, talking along the way.
-`,
+        text: `Scott grabs the princess by the hand, “Come on,  let’s leave this place before we become dead with the dragon!”  Scott urged, and with his hand he led the princess to the castle’s exit.  As much as he would have loved to sweep a lady off of her feet, Scott knew the circumstances weren’t right, especially since the lava moat was up ahead.  As they approach a less scorched land, the structure on the lava island finally crumbles, along with the dragon.  After they crossed the bridge,  Scott led the princess to the horses, excited whinnies come from Cody.  With a smile, Scott embraced his equestrian buddy, while the princess looked around the camp for food.  Scott finally turns to the princess, “Come here your highness, we should get back to the castle as soon as possible.”\nShe strides over, “What about the other horses?”\n"The king will send some other knights to pick them up,”  Scott replied.  “They all have enough hay to last them another week.”\n“ Okay,” Scott helps the princess onto the horse.  “Knowing my father, he’s probably worried sick right now.  Let’s hurry.”  The two trot back to the castle, talking along the way.`,
         choices: [
-            ["Good end!", "theEnd"]
+            ["Good end!", "theMajorEnd"]
         ]
     },
     bridalStyle: {
-        text: `Scott carries the princess and runs back towards the camp.  As they get halfway on the bridge the castle behind them finally crumbles.  The shockwave of the crash violently shakes the bridge.`,
+        text: `Scott carries the princess and runs back towards the camp.  As they get halfway on the bridge the castle behind them finally crumbles.  The shockwave of the crash violently shakes the bridge.  The princess slips from Scott's hands, but the princess is quick to grab onto Scott's hand.  Sadly Scott's balance matches his grip (which is terrible) and the princess essentially pulls down the squire along with her to the fiery depths of the lava below.`,
         choices: [
-            ["Worst end", "theEnd"]
+            ["Worst end", "theMajorEnd"]
         ]
     },
     noWay: {
@@ -231,11 +229,15 @@
     ballAndChain: {
         text: `Scott has a flail and he swings it at the dragon but it slips out of his hand! Luckily it launches up and comes crashing down on the dragon breaking his spine bringing him to a painful death. Scott runs around in search for the princess when suddenly he finds her! But her body is cold and frail... \nshe has been stuck in here for weeks with no food or water and it has killed her. Scott returns to the kingdom with some terrible news for the king.`,
         choices: [
-            ["That sucks a lot man, you did all of that for nothing", "theEnd"]
+            ["That sucks a lot man, you did all of that for nothing", "theMajorEnd"]
         ]
     },
     theEnd: {
         text: `This is the end of Scott's story.  If you want to try again for different results, refresh the page`,
+        choices: []
+    },
+    theMajorEnd: {
+        text: `This is one out of the four major endings of Scott's story.  If you want to try again for different results, refresh the page`,
         choices: []
     },
 }
